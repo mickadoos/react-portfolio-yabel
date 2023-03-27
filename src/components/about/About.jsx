@@ -39,7 +39,7 @@ const About = () => {
       <div className="about__content">
         <h5>Hi I'm</h5>
           <h2>Yabel Rodríguez</h2>
-          <h2>Full Stack Developer</h2>
+          <h2 id="full-stack" data-text="Full Stack Developer">Full Stack Developer</h2>
           <div className="about__cards">
             {data.map(({ title, image, subtitle, demo }) => {
               return (
