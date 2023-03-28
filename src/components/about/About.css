@@ -84,10 +84,14 @@
   min-height: 170px;
 }
 
-.about__card:hover {
-  background: transparent;
-  border-color: var(--color-primary-variant);
+@media (hover:hover) {
+  .about__card:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+  }
+  
 }
+
 
 .about__card-image {
   border-radius: 1rem;
