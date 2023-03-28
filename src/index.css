@@ -27,12 +27,10 @@
 
 html {
   scroll-behavior: smooth;
-  border: 1px solid green;
 }
 
 html {
   scroll-behavior: smooth;
-  border: 1px solid green;
 }
 
 body {
@@ -47,7 +45,6 @@ body {
 .container {
   /* width: var(--container-width-lg); */
   /* margin: 0 auto; */
-  border: 1px solid orange;
 }
 
 h1,
@@ -65,13 +62,8 @@ h1 {
 section {
   margin: 2rem 0;
   padding: 0 1rem;
-  border: 1px solid red;
 }
 
- header, footer {
-  border: 1px solid red;
- }
- 
 section > h2,
 section > h5 {
   text-align: center;

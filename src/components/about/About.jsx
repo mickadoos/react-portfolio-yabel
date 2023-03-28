@@ -18,14 +18,12 @@ const About = () => {
       image: GameProjectIMG,
       subtitle: "Frontend App",
       demo: "https://mickadoos.github.io/game-project-x/",
-    }
+    },
   ];
   return (
-    // 10.2 chanmge all components to a section parent container with his correspondent id
     <section id="about">
       <div className="container about__container">
-      
-      <div className="about__me">
+        <div className="about__me">
           <div className="about__me-image">
             <img src={ME} alt="" />
             <h2>
@@ -35,11 +33,13 @@ const About = () => {
             <a href="#contact">Hire me</a>
           </div>
         </div>
-        
-      <div className="about__content">
-        <h5>Hi I'm</h5>
+
+        <div className="about__content">
+          <h5>Hi I'm</h5>
           <h2>Yabel Rodríguez</h2>
-          <h2 id="full-stack" data-text="Full Stack Developer">Full Stack Developer</h2>
+          <h2 id="full-stack" data-text="Full Stack Developer">
+            Full Stack Developer
+          </h2>
           <div className="about__cards">
             {data.map(({ title, image, subtitle, demo }) => {
               return (
@@ -64,12 +64,6 @@ const About = () => {
 
           <CTA />
         </div>
-
-       
-
-    
-
-        
       </div>
     </section>
   );

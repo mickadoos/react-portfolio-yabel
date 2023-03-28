@@ -6,7 +6,6 @@
   grid-template-columns: 1fr;
   gap: 2.5rem;
   justify-items: center;
-  border: 1px solid green;
   width: 100%;
 }
 
@@ -16,8 +15,6 @@
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
-  border: 1px solid white;
-  /* width: 17.7rem; */
 }
 
 @media (hover: hover) {
@@ -42,7 +39,6 @@
   gap: 0.5rem;
   margin-bottom: 1rem;
   justify-items: center;
-  border: 1px solid pink;
 }
 
 .portfolio__item-cta > a {
@@ -51,22 +47,14 @@
 }
 
 @media (min-width: 40em) {
-    /* #portfolio {
-        max-width: 100%;
-    } */
+ 
   .portfolio__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* gap: 0.5rem; */
     justify-items: center;
     padding: 0 2rem;
-    /* width: fit-content; */
     max-width: 100%;
   }
-
-  /* .portfolio__item {
-    width: auto;
-  } */
 
   .portfolio__item-cta > a {
     font-size: 80%;

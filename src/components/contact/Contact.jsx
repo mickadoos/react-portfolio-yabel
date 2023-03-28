@@ -1,7 +1,4 @@
-// 15.0 copy paste the contact component, install emailjs-com (look tut)
-// 3.0 create all components folders with .jsx file and .css --- then on .jsx file type racfe, press tab and import the .css file 
 import "./Contact.css";
-// import "./Contact2.css";
 import { MdOutlineMail } from "react-icons/md";
 import {BsWhatsapp} from 'react-icons/bs'
 import React, { useRef } from 'react';
@@ -24,7 +21,6 @@ const Contact = () => {
   };
 
   return (
-    // 10.2 chanmge all components to a section parent container with his correspondent id
     <section id="contact">
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
