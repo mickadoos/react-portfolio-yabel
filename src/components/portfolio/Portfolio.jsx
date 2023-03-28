@@ -24,6 +24,13 @@ const Portfolio = () => {
       title: 'Game Project X',
       github: 'https://github.com/mickadoos/game-project-x',
       demo: 'https://mickadoos.github.io/game-project-x/'
+    },
+    {
+      id: 2,
+      image: GameProjectIMG,
+      title: 'Game Project X',
+      github: 'https://github.com/mickadoos/game-project-x',
+      demo: 'https://mickadoos.github.io/game-project-x/'
     }
   ]
 
@@ -33,7 +40,7 @@ const Portfolio = () => {
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
 
-      <container className="portfolio__container">
+      <div className="portfolio__container">
         {
           data.map(({id, image, title, github, demo, frontRepo, backRepo}) => {
             return (
@@ -44,6 +51,8 @@ const Portfolio = () => {
           </div>
           <h3>{title}</h3>
           <div className="portfolio__item-cta">
+          {/* <div className="portfolio__item-cta-link"> */}
+
           <a
             href={frontRepo}
             className="btn"
@@ -69,6 +78,7 @@ const Portfolio = () => {
             Live Demo
           </a>
           </div>
+          {/* </div> */}
         </article> :
         
         <article key={id} className="portfolio__item">
@@ -101,7 +111,7 @@ const Portfolio = () => {
             )
           })
         }
-      </container>
+      </div>
     </section>
   );
 };

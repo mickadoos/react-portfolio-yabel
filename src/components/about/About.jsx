@@ -18,7 +18,7 @@ const About = () => {
       image: GameProjectIMG,
       subtitle: "Frontend App",
       demo: "https://mickadoos.github.io/game-project-x/",
-    },
+    }
   ];
   return (
     // 10.2 chanmge all components to a section parent container with his correspondent id
