@@ -48,8 +48,10 @@ const About = () => {
                     <div className="about__card-image">
                       <img src={image} alt="" />
                     </div>
+                    <div>
                     <h5>{title}</h5>
                     <small>{subtitle}</small>
+                    </div>
                   </article>
                 </a>
               );

@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   aspect-ratio: 1/1;
-}
+  filter: drop-shadow(0 0 0.75rem #444444);}
 
 .about__content {
   box-sizing: border-box;
@@ -40,9 +40,9 @@
   left: 0;
   width: 0;
   height: 100%;
-  color: #01fe87;
+  color: #6B6B6B;
   -webkit-text-stroke: 0vw rgb(124, 124, 124);
-  border-right: 2px solid #01fe87;
+  border-right: 2px solid #6B6B6B;
   overflow: hidden;
   animation: animate 6s linear infinite;
 }
@@ -81,7 +81,7 @@
 @media (hover: hover) {
   .about__card:hover {
     background: transparent;
-    border-color: var(--color-primary-variant);
+    border-color: #B5B5B5;
   }
 }
 
@@ -96,12 +96,12 @@
 
 .about__card small {
   font-size: 0.7rem;
-  color: var(--color-light);
+  /* color: var(--color-light); */
 }
 
 .about__content p {
   margin: 0 0 2rem;
-  color: var(--color-light);
+  /* color: var(--color-light); */
 }
 
 /* ============== CTA ============== */
