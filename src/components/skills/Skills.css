@@ -15,10 +15,12 @@
     max-width: 100%;
 }
 
-.skills__container > div:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
+@media (hover:hover) {
+    .skills__container > div:hover {
+        background: transparent;
+        border-color: var(--color-primary-variant);
+        cursor: default;
+    }
 }
 
 .skills__container > div h3 {

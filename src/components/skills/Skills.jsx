@@ -3,7 +3,18 @@ import React from 'react'
 import './Skills.css'
 // import './Skills2.css'
 // import { BsFillPatchCheckFill } from "react-icons/bs";
-import JavasCriptICON from '../../assets/png/001-js.png'
+import JavasCriptICON from '../../assets/png/js-icon.png'
+import HTMLICON from '../../assets/png/html-icon.png'
+import CSSICON from '../../assets/png/css-3-icon.png'
+import BootstrapICON from '../../assets/png/bootstrap-icon.png'
+import ReactICON from '../../assets/png/react-icon.png'
+import NodeJSICON from '../../assets/png/nodejs-icon.png'
+import MongoDBICON from '../../assets/png/mongodb-icon.png'
+import ExpressICON from '../../assets/png/express-icon.png'
+import APIICON from '../../assets/png/api-icon.png'
+import PostmanICON from '../../assets/png/postman-icon.png'
+
+
 
 
 const Skills = () => {
@@ -16,22 +27,7 @@ const Skills = () => {
         <div className="skills__frontend">
           <h3>Frontend Development</h3>
           <div className="skills__content">
-            <article className="skills__details">
-              {/* <BsFillPatchCheckFill className="skills__details-icon" /> */}
-              <img src={JavasCriptICON} alt="" className="skills__details-icon"/>
-                <h4>HTML</h4>
-              {/* <div>
-                <small className="text-light">skillsd</small>
-              </div> */}
-            </article><article className="skills__details">
-              {/* <BsFillPatchCheckFill className="skills__details-icon" /> */}
-              <img src={JavasCriptICON} alt="" className="skills__details-icon"/>
-                <h4>CSS</h4>
-              {/* <div>
-                <small className="text-light">skillsd</small>
-              </div> */}
-            </article>
-            <article className="skills__details">
+          <article className="skills__details">
               {/* <BsFillPatchCheckFill className="skills__details-icon" /> */}
               <img src={JavasCriptICON} alt="" className="skills__details-icon"/>
                 <h4>Javascript</h4>
@@ -41,7 +37,22 @@ const Skills = () => {
             </article>
             <article className="skills__details">
               {/* <BsFillPatchCheckFill className="skills__details-icon" /> */}
-              <img src={JavasCriptICON} alt="" className="skills__details-icon"/>
+              <img src={HTMLICON} alt="" className="skills__details-icon"/>
+                <h4>HTML</h4>
+              {/* <div>
+                <small className="text-light">skillsd</small>
+              </div> */}
+            </article><article className="skills__details">
+              {/* <BsFillPatchCheckFill className="skills__details-icon" /> */}
+              <img src={CSSICON} alt="" className="skills__details-icon"/>
+                <h4>CSS</h4>
+              {/* <div>
+                <small className="text-light">skillsd</small>
+              </div> */}
+            </article>
+            <article className="skills__details">
+              {/* <BsFillPatchCheckFill className="skills__details-icon" /> */}
+              <img src={BootstrapICON} alt="" className="skills__details-icon"/>
                 <h4>Bootstrap</h4>
               {/* <div>
                 <small className="text-light">skillsd</small>
@@ -49,7 +60,7 @@ const Skills = () => {
             </article>
             <article className="skills__details">
               {/* <BsFillPatchCheckFill className="skills__details-icon" /> */}
-              <img src={JavasCriptICON} alt="" className="skills__details-icon"/>
+              <img src={ReactICON} alt="" className="skills__details-icon"/>
                 <h4>React</h4>
               {/* <div>
                 <small className="text-light">skillsd</small>
@@ -65,7 +76,7 @@ const Skills = () => {
           <div className="skills__content">
           <article className="skills__details">
               {/* <BsFillPatchCheckFill className="skills__details-icon" /> */}
-              <img src={JavasCriptICON} alt="" className="skills__details-icon"/>
+              <img src={NodeJSICON} alt="" className="skills__details-icon"/>
                 <h4>NodeJS</h4>
               {/* <div>
                 <small className="text-light">skillsd</small>
@@ -73,7 +84,7 @@ const Skills = () => {
             </article>
             <article className="skills__details">
               {/* <BsFillPatchCheckFill className="skills__details-icon" /> */}
-              <img src={JavasCriptICON} alt="" className="skills__details-icon"/>
+              <img src={MongoDBICON} alt="" className="skills__details-icon"/>
                 <h4>MongoDB</h4>
               {/* <div>
                 <small className="text-light">skillsd</small>
@@ -81,7 +92,7 @@ const Skills = () => {
             </article>
             <article className="skills__details">
               {/* <BsFillPatchCheckFill className="skills__details-icon" /> */}
-              <img src={JavasCriptICON} alt="" className="skills__details-icon"/>
+              <img src={ExpressICON} alt="" className="skills__details-icon"/>
                 <h4>Express</h4>
               {/* <div>
                 <small className="text-light">skillsd</small>
@@ -89,7 +100,7 @@ const Skills = () => {
             </article>
             <article className="skills__details">
               {/* <BsFillPatchCheckFill className="skills__details-icon" /> */}
-              <img src={JavasCriptICON} alt="" className="skills__details-icon"/>
+              <img src={APIICON} alt="" className="skills__details-icon"/>
                 <h4>API Rest</h4>
               {/* <div>
                 <small className="text-light">skillsd</small>
@@ -97,7 +108,7 @@ const Skills = () => {
             </article>
             <article className="skills__details">
               {/* <BsFillPatchCheckFill className="skills__details-icon" /> */}
-              <img src={JavasCriptICON} alt="" className="skills__details-icon"/>
+              <img src={PostmanICON} alt="" className="skills__details-icon"/>
                 <h4>Postman</h4>
               {/* <div>
                 <small className="text-light">skillsd</small>
