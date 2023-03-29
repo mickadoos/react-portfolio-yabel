@@ -46,6 +46,15 @@
   text-align: center;
 }
 
+.portfolio__item-cta-no-demo {
+  text-align: center;
+}
+
+.portfolio__item-cta-no-demo > a {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
 @media (min-width: 40em) {
  
   .portfolio__container {

@@ -2,6 +2,7 @@ import React from "react";
 import "./Portfolio.css";
 import DPLANIMG from "../../assets/dplan-project-image.png";
 import GameProjectIMG from "../../assets/game-project-x-image.png";
+import TinderCloneIMG from "../../assets/tinder-clone-project-image.png";
 
 const Portfolio = () => {
   const data = [
@@ -20,14 +21,14 @@ const Portfolio = () => {
       title: "Game Project X",
       github: "https://github.com/mickadoos/game-project-x",
       demo: "https://mickadoos.github.io/game-project-x/",
-    },
+    }
+    ,
     {
-      id: 2,
-      image: GameProjectIMG,
-      title: "Game Project X",
-      github: "https://github.com/mickadoos/game-project-x",
-      demo: "https://mickadoos.github.io/game-project-x/",
-    },
+      id: 3,
+      image: TinderCloneIMG,
+      title: "Tinder Clone",
+      github: "https://github.com/OsAlva/PokeTinder/tree/yabel",
+    }
   ];
 
   return (
@@ -70,7 +71,8 @@ const Portfolio = () => {
                 </a>
               </div>
             </article>
-          ) : (
+          ) 
+          : demo ? (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
                 <img src={image} alt="" />
@@ -95,7 +97,24 @@ const Portfolio = () => {
                 </a>
               </div>
             </article>
-          );
+          ) : (
+            <article key={id} className="portfolio__item">
+              <div className="portfolio__item-image">
+                <img src={image} alt="" />
+              </div>
+              <h3>{title}</h3>
+              <div className="portfolio__item-cta-no-demo">
+                <a
+                  href={github}
+                  className="btn"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
+              </div>
+            </article>
+          )
         })}
       </div>
     </section>
