@@ -11,7 +11,7 @@ nav {
     display: flex;
     gap: 0.8rem;
     border-radius: 3rem;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(5px);
     z-index: 4;
 
 }
@@ -25,12 +25,14 @@ nav a {
     font-size: 1.1rem;
 }
 
-nav a:hover {
-    background: rgba(0, 0, 0, 0.3);
+@media (hover:hover) {
+    nav a:hover {
+        background: rgba(0, 0, 0, 0.3);
+    }
 }
 
 nav a.active {
-    background: #5B5B5B;
+    background: #CFCFCF;
     color: var(--color-bg);
 }
 

@@ -1,3 +1,6 @@
+#about {
+  margin-top: 2rem;
+}
 .about__container {
   display: grid;
   grid-template-columns: 1fr;
@@ -40,9 +43,9 @@
   left: 0;
   width: 0;
   height: 100%;
-  color: #6B6B6B;
+  color: #466c85;
   -webkit-text-stroke: 0vw rgb(124, 124, 124);
-  border-right: 2px solid #6B6B6B;
+  border-right: 2px solid #466c85;
   overflow: hidden;
   animation: animate 6s linear infinite;
 }
