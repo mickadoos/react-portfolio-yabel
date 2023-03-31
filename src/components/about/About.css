@@ -1,6 +1,7 @@
 #about {
   margin-top: 2rem;
 }
+
 .about__container {
   display: grid;
   grid-template-columns: 1fr;
@@ -8,20 +9,112 @@
   align-items: center;
 }
 
+/* ============== ABOUT ME ============== */
+
 .about__me {
   padding: 3rem 3rem 0 3rem;
 }
 
 .about__me-image {
+  margin-bottom: 2rem;
   border-radius: 50%;
+  background: var(--color-bg-variant);
   overflow: hidden;
   transition: var(--transition);
   max-width: 25rem;
   max-height: 25rem;
   display: flex;
+  justify-content: center;
+  text-align: center;
   align-items: center;
+  flex-direction: column;
   aspect-ratio: 1/1;
-  filter: drop-shadow(0 0 0.75rem #444444);}
+  filter: drop-shadow(0 0 0.75rem #444444);
+}
+
+.about__me-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.about__me-image h2 {
+  /* position: relative; */
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+.about__me-image h2 span {
+  font-weight: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.about__me-image a {
+  position: relative;
+  font-size: 10px;
+  padding: 10px 20px;
+  background: var(--color-primary);
+  color: var(--color-bg);
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+@media (hover:hover) {
+  .about__me-image:hover img{
+    opacity: 0;
+  }
+  
+  .about__me:hover a {
+    pointer-events: all;
+  }
+
+  .about__me-image a:hover {
+    letter-spacing: 0.1rem;
+  }
+}
+
+/* ============== ABOUT SOCIALS ============== */
+
+.about__socials {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 5%;
+}
+
+.about__socials a {
+  background: var(--color-bg-variant);
+  color: var(--color-white);
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  display: flex;
+  border: 1px solid transparent;
+}
+@media (hover:hover) {
+   .about__socials a:hover {
+       background: #444444;
+       color: var(--color-bg);
+       border-color: var(--color-bg);
+      }
+  }
+
+/* ============== ABOUT CONTENT ============== */
 
 .about__content {
   box-sizing: border-box;
@@ -61,6 +154,9 @@
     width: 100%;
   }
 }
+
+
+/* ============== CARDS (removed) ============== */
 
 .about__cards {
   display: grid;
@@ -159,6 +255,11 @@
   .about__me {
     max-width: fit-content;
     min-width: 600px;
+  }
+
+  .about__socials {
+  padding-right: 6rem;
+
   }
 
   .about__content {

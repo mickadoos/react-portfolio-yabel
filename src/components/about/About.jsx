@@ -2,6 +2,8 @@ import React from "react";
 import "./About.css";
 import ME from "../../assets/foto-yabel.JPG";
 import CTA from "./CTA.jsx";
+import { BsLinkedin } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 // import DPLANIMG from "../../assets/dplan-project-image.png";
 // import GameProjectIMG from "../../assets/game-project-x-image.png";
 
@@ -31,6 +33,23 @@ const About = () => {
               <span>Full Stack Developer</span>
             </h2>
             <a href="#contact">Hire me</a>
+          </div>
+
+          <div className="about__socials">
+            <a
+              href="https://www.linkedin.com/in/yabel-rodriguez/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsLinkedin />
+            </a>
+            <a
+              href="https://github.com/mickadoos"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsGithub />
+            </a>
           </div>
         </div>
 
