@@ -4,7 +4,7 @@
 .about__container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0;
+  gap: 5%;
   align-items: center;
 }
 
@@ -43,9 +43,9 @@
   left: 0;
   width: 0;
   height: 100%;
-  color: #466c85;
-  -webkit-text-stroke: 0vw rgb(124, 124, 124);
-  border-right: 2px solid #466c85;
+  color: var(--color-fullstack);
+  -webkit-text-stroke: 1px #494368;
+  border-right: 2px solid var(--color-fullstack);
   overflow: hidden;
   animation: animate 6s linear infinite;
 }
@@ -99,12 +99,10 @@
 
 .about__card small {
   font-size: 0.7rem;
-  /* color: var(--color-light); */
 }
 
 .about__content p {
-  margin: 0 0 2rem;
-  /* color: var(--color-light); */
+  margin: 2rem 0;
 }
 
 /* ============== CTA ============== */
@@ -117,11 +115,10 @@
 
 @media (min-width: 40em) {
   .about__container {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
     gap: 3%;
     padding: 0 2rem;
-    align-items: start;
+    align-items: flex-start;
   }
 
   .about__salut {
@@ -133,6 +130,7 @@
   .about__me {
     order: 2;
     padding: 3rem 3rem;
+    min-width: 400px;
   }
 
   .about__content {
@@ -160,10 +158,12 @@
 
   .about__me {
     max-width: fit-content;
+    min-width: 600px;
   }
 
   .about__content {
     padding: 5rem 0 0 5rem;
+    max-width: 90%;
   }
 
   .about__content > p {
