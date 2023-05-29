@@ -1,5 +1,5 @@
 import React from 'react'
-import CV from '../../assets/CV-Yabel-Rodriguez.pdf' 
+import CV from '../../assets/CV-Yabel-Rodriguez-EN.pdf' 
 import {BsBoxArrowInUpRight} from 'react-icons/bs'
  
 function CTA() {
