@@ -11,9 +11,9 @@ const Portfolio = () => {
       image: DPLANIMG,
       title: "DPLAN",
       github: "https://github.com/mickadoos",
-      demo: "https://famous-brioche-240d75.netlify.app/",
-      frontRepo: "https://github.com/PmplCode/DPlan-front",
-      backRepo: "https://github.com/PmplCode/DPlan-back",
+      demo: "https://dplan.netlify.app/",
+      frontRepo: "https://github.com/mickadoos/dplan-client",
+      backRepo: "https://github.com/mickadoos/dplan-server",
     },
     {
       id: 2,
