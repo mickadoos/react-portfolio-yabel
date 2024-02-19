@@ -21,14 +21,13 @@ const Portfolio = () => {
       title: "Game Project X",
       github: "https://github.com/mickadoos/game-project-x",
       demo: "https://mickadoos.github.io/game-project-x/",
-    }
-    ,
+    },
     {
       id: 3,
       image: TinderCloneIMG,
       title: "Tinder Clone",
       github: "https://github.com/OsAlva/PokeTinder/tree/yabel",
-    }
+    },
   ];
 
   return (
@@ -41,7 +40,9 @@ const Portfolio = () => {
           return frontRepo && backRepo ? (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
-                <img src={image} alt="" />
+                <a href={demo} target="_blank" rel="noreferrer">
+                  <img src={image} alt="" />
+                </a>
               </div>
               <h3>{title}</h3>
               <div className="portfolio__item-cta">
@@ -71,11 +72,12 @@ const Portfolio = () => {
                 </a>
               </div>
             </article>
-          ) 
-          : demo ? (
+          ) : demo ? (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
-                <img src={image} alt="" />
+              <a href={demo} target="_blank" rel="noreferrer">
+                  <img src={image} alt="" />
+                </a>
               </div>
               <h3>{title}</h3>
               <div className="portfolio__item-cta">
@@ -114,7 +116,7 @@ const Portfolio = () => {
                 </a>
               </div>
             </article>
-          )
+          );
         })}
       </div>
     </section>
